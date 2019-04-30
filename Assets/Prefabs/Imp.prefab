@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4520342131931399017}
   - component: {fileID: 4520342131931399018}
   - component: {fileID: 4520342131931399019}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Imp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -164,11 +164,11 @@ MonoBehaviour:
   player: {fileID: 0}
   enemyAttack: {fileID: 6295908142374843127, guid: f213d12a736ffed4a8dc9022c5ad1f23,
     type: 3}
-  attackRange: 3
   searchingRange: 4
-  enemyStats:
+  stats:
     agility: 1
-    speed: 1
+    speed: 2
     HP: 15
     damage: 5
     attackCooldown: 2
+    attackRange: 3

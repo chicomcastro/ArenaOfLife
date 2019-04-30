@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour
     public GameObject enemyAttack;
 
     [Header("Enemy Stats")]
-    public float attackRange = 1f;
     public float searchingRange = 5f;
     private float lastAttackTime;
     private int patrolSentido;
@@ -26,7 +25,7 @@ public class Enemy : MonoBehaviour
 
     private float time;
 
-    public CharacterStat enemyStats;
+    public CharacterStat stats;
 
     // Use this for initialization
     void Start()
@@ -41,7 +40,7 @@ public class Enemy : MonoBehaviour
         lastAttackTime = Time.time;
         patrolSentido = -1;
 
-        walkSpeed = (float)(enemyStats.speed + (enemyStats.agility / 5));
+        walkSpeed = (float)(stats.speed + (stats.agility / 5));
         sprintSpeed = walkSpeed + (walkSpeed / 2);
 
         Rest();
@@ -49,10 +48,6 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        HandleAnimation();
-
-        HandleFacingDirection();
-
         HandleDeath();
 
         if (haveDied)
@@ -60,6 +55,10 @@ public class Enemy : MonoBehaviour
             Rest();
             return;
         }
+
+        HandleAnimation();
+
+        HandleFacingDirection();
 
         HandleAttack();
 
@@ -76,12 +75,12 @@ public class Enemy : MonoBehaviour
             isAttacking = false;
         }
 
-        if (!IsLoockingToPlayer())
+        if (!IsLookingToPlayer())
         {
             canAttack = false;
         }
 
-        if (Time.time - lastAttackTime > enemyStats.attackCooldown)
+        if (Time.time - lastAttackTime > stats.attackCooldown)
         {
             canAttack = true;
             lastAttackTime = Time.time;
@@ -95,21 +94,31 @@ public class Enemy : MonoBehaviour
 
         Vector3 dir = player.transform.position - transform.position;
 
-        if (dir.magnitude < searchingRange && IsLoockingToPlayer())
+        if (dir.magnitude < searchingRange && IsLookingToPlayer())
         {
-            if (dir.magnitude < attackRange && canAttack)
+            if (dir.magnitude < stats.attackRange && canAttack)
             {
                 Attack();
             }
 
-            if (!isAttacking && dir.magnitude > attackRange * 0.9f)
+            if (!isAttacking)
             {
-                MoveOn(dir);
+                if (dir.magnitude > stats.attackRange * 0.9f)
+                {
+                    MoveOn(dir);
+                }
+                else {
+                    Rest();
+                    // Attacks and run
+                    //MoveOn(-dir);
+                }
             }
+
+            time = Time.time - 5;
         }
         else
         {
-            if (Time.time - time > 5f)
+            if (Time.time - time >= 5f)
             {
                 Rest();
 
@@ -128,7 +137,7 @@ public class Enemy : MonoBehaviour
         rb.velocity = dir.normalized * curSpeed;
     }
 
-    private bool IsLoockingToPlayer()
+    private bool IsLookingToPlayer()
     {
         return (
             (transform.localScale.x > 0) && (player.transform.position.x - transform.position.x > 0) ||
@@ -143,7 +152,7 @@ public class Enemy : MonoBehaviour
         anim.Play("attacking");
         GameObject gamo = Instantiate(enemyAttack, transform.position, Quaternion.identity);
         gamo.GetComponent<ProjectileMovement>().dir = (player.transform.position - transform.position).normalized;
-        gamo.GetComponent<ProjectileMovement>().damage = enemyStats.damage;
+        gamo.GetComponent<ProjectileMovement>().damage = stats.damage;
         gamo.GetComponent<ProjectileMovement>().player = player;
 
         rb.velocity = Vector3.zero;
@@ -181,13 +190,18 @@ public class Enemy : MonoBehaviour
 
     public void HandleDeath()
     {
-        if (enemyStats.HP <= 0f)
+        if (stats.HP <= 0f)
         {
             anim.Play("death");
             haveDied = true;
         }
 
-        if (player.GetComponent<PlayerController>().plStat.HP <= 0)
+        if (player.GetComponent<PlayerController>().status.HP <= 0)
             haveDied = true;
+    }
+
+    public void TakeDamage(float _damage)
+    {
+        stats.HP -= _damage;
     }
 }
