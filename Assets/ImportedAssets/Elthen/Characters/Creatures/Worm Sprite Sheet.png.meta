@@ -1,45 +1,43 @@
 fileFormatVersion: 2
-guid: 081b50037c1565f45a2f06d869a0f85c
+guid: f53d16a0507ab314e90681361f71893e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Buff Totem anim1 begin
-    21300002: Buff Totem Sprite Sheet_1
-    21300004: Buff Totem Sprite Sheet_2
-    21300006: Buff Totem Sprite Sheet_3
-    21300008: Buff Totem Sprite Sheet_4
-    21300010: Buff Totem Sprite Sheet_5
-    21300012: Buff Totem Sprite Sheet_6
-    21300014: Buff Totem Sprite Sheet_7
-    21300016: Buff Totem Sprite Sheet_8
-    21300018: Buff Totem Sprite Sheet_9
-    21300020: Buff Totem anim1 end
-    21300022: Buff Totem Sprite Sheet_11
-    21300024: Buff Totem Sprite Sheet_12
-    21300026: Buff Totem Sprite Sheet_13
-    21300028: Buff Totem Sprite Sheet_14
-    21300030: Buff Totem Sprite Sheet_15
-    21300032: Buff Totem Sprite Sheet_16
-    21300034: Buff Totem Sprite Sheet_17
-    21300036: Buff Totem Sprite Sheet_18
-    21300038: Buff Totem Sprite Sheet_19
-    21300040: Buff Totem Sprite Sheet_20
-    21300042: Buff Totem Sprite Sheet_21
-    21300044: Buff Totem Sprite Sheet_22
-    21300046: Buff Totem Sprite Sheet_23
-    21300048: Buff Totem Sprite Sheet_24
-    21300050: Buff Totem Sprite Sheet_25
-    21300052: Buff Totem Sprite Sheet_26
-    21300054: Buff Totem Sprite Sheet_27
-    21300056: Buff Totem Sprite Sheet_28
-    21300058: Buff Totem Sprite Sheet_29
-    21300060: Buff Totem Sprite Sheet_30
-    21300062: Buff Totem Sprite Sheet_31
-    21300064: Buff Totem Sprite Sheet_32
-    21300066: Buff Totem Sprite Sheet_33
-    21300068: Buff Totem Sprite Sheet_34
-    21300070: Buff Totem Sprite Sheet_35
-    21300072: Buff Totem Sprite Sheet_37
-    21300074: Buff Totem Sprite Sheet_39
+    21300000: Worm idle
+    21300002: Worm Sprite Sheet_1
+    21300004: Worm Sprite Sheet_2
+    21300006: Worm Sprite Sheet_3
+    21300008: Worm Sprite Sheet_4
+    21300010: Worm Sprite Sheet_5
+    21300012: Worm Sprite Sheet_6
+    21300014: Worm Sprite Sheet_7
+    21300016: Worm moving
+    21300018: Worm Sprite Sheet_9
+    21300020: Worm Sprite Sheet_10
+    21300022: Worm Sprite Sheet_11
+    21300024: Worm Sprite Sheet_12
+    21300026: Worm Sprite Sheet_13
+    21300028: Worm Sprite Sheet_14
+    21300030: Worm Sprite Sheet_15
+    21300032: Worm damage
+    21300034: Worm Sprite Sheet_17
+    21300036: Worm Sprite Sheet_18
+    21300038: Worm Sprite Sheet_19
+    21300040: Worm death
+    21300042: Worm Sprite Sheet_21
+    21300044: Worm Sprite Sheet_22
+    21300046: Worm Sprite Sheet_23
+    21300048: Worm Sprite Sheet_24
+    21300050: Worm Sprite Sheet_25
+    21300052: Worm Sprite Sheet_26
+    21300054: Worm Sprite Sheet_29
+    21300056: Worm Sprite Sheet_33
+    21300058: Worm Sprite Sheet_34
+    21300060: Worm Sprite Sheet_39
+    21300062: Worm Sprite Sheet_40
+    21300064: Worm Sprite Sheet_42
+    21300066: Worm Sprite Sheet_46
+    21300068: Worm Sprite Sheet_47
+    21300070: Worm Sprite Sheet_48
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -144,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Buff Totem anim1 begin
+      name: Worm idle
       rect:
         serializedVersion: 2
-        x: 2
-        y: 108
-        width: 17
-        height: 18
+        x: 11
+        y: 228
+        width: 9
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,18 +156,238 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d1085d254984064d88459711d3b3e77
+      spriteID: 0961a630f3c3dc24787ab08b51980ae9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_1
+      name: Worm Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 23
-        y: 108
-        width: 17
+        x: 43
+        y: 228
+        width: 9
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832802df0cb8bcb4dbe7606b9e5fd75f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 228
+        width: 9
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7124fdae7e69c994eb0589e6de4ffaaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 228
+        width: 9
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74dd64a4e9425f140ae1bbc702e8eaf0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 228
+        width: 9
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f407679b5ee67fa41a8f499105e3355a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 228
+        width: 9
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9102d88110dce0546b9b04f46488d8d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 228
+        width: 9
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495c37ab1a80de746ae2b62d1e3c10ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 228
+        width: 9
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee8a3f0c847ce14bb94c01dd29ea2d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm moving
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 196
+        width: 9
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6ae6a3d2a369f4cb4485ec09e50eea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 196
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f728f22dec3a646a31d19571e804a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 196
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0696613e2c1f74b898377c35036d2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 196
+        width: 18
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040105bfb9f0ea44c80e7f7a9c666ef7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 196
+        width: 11
         height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -178,19 +396,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6f52d6deced1324d89d104386e0fc34
+      spriteID: 1bebcb37ea79ecf4d9a5cc049d5592ba
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_4
+      name: Worm Sprite Sheet_13
       rect:
         serializedVersion: 2
-        x: 44
-        y: 108
-        width: 17
-        height: 20
+        x: 171
+        y: 196
+        width: 8
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,19 +416,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07bc57dcaa2b01a4cbd8bfbaa9f87ea5
+      spriteID: 964843c5bed759a4f997bbb454ee48c4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_6
+      name: Worm Sprite Sheet_14
       rect:
         serializedVersion: 2
-        x: 63
-        y: 108
-        width: 17
-        height: 21
+        x: 203
+        y: 199
+        width: 9
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,19 +436,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b20b4111e529b10419e091d808193d1c
+      spriteID: 430c996fbb851c8488825bf6c6100364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_7
+      name: Worm Sprite Sheet_15
       rect:
         serializedVersion: 2
-        x: 84
-        y: 108
-        width: 17
-        height: 22
+        x: 235
+        y: 196
+        width: 9
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,18 +456,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 033248ba66715dd4e813ff98b8afd919
+      spriteID: 72e8c558481fe2049bd6877c529cf374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_8
+      name: Worm damage
       rect:
         serializedVersion: 2
-        x: 104
-        y: 108
-        width: 17
+        x: 11
+        y: 164
+        width: 9
         height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -258,18 +476,78 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6021a325d7982943818b7064b7f021c
+      spriteID: 3201b7f137016734184850fc588b92ad
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_9
+      name: Worm Sprite Sheet_17
       rect:
         serializedVersion: 2
-        x: 125
-        y: 108
-        width: 17
+        x: 43
+        y: 164
+        width: 9
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b50dfcaeaf6e0342ac40223a5ad8ae1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 164
+        width: 9
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b38fd967f304c4889d6a0447344efa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 164
+        width: 9
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb2ba6602a56444798965b1d3061ea7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm death
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 132
+        width: 9
         height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -278,18 +556,158 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 856cc58bda0934945854eeaeba0b4055
+      spriteID: 070e20905bf902746a5868e68fd420e4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem anim1 end
+      name: Worm Sprite Sheet_21
       rect:
         serializedVersion: 2
-        x: 146
-        y: 108
+        x: 43
+        y: 132
+        width: 9
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258d1b6aaceaaaf468bb9b703140c90e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 132
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20143dd185e18104d96c85af9afaf635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 132
         width: 17
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6e2724869c3364f999f6364164c850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 130
+        width: 14
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc07ddd75eefd744dbd142dc8fae404e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 131
+        width: 14
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11111111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbc66fcd33587e4e886df8586e031ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 97
+        width: 15
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30b0165f6e37a14eae660edf61544be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 65
+        width: 15
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebec653ed7d25914db97d6e081bdfbfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 32
+        width: 26
         height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -298,487 +716,147 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f018979ad78059d4fb25dd284a8ee676
+      spriteID: 25b08c6728ca7604facc8462abc01f78
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 76
-        width: 10
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a2da33534c677e4abc1318a140f45af
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 76
-        width: 22
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1ca97d7f3ba81a4eb9a2adf0b00f629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 76
-        width: 28
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bb4cb57853833a4b81a55b9c6ba0464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_14
+      name: Worm Sprite Sheet_34
       rect:
         serializedVersion: 2
         x: 108
-        y: 76
-        width: 34
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36660a2d1ba154d4683dc900dc44a2ac
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 157
-        y: 76
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02aea467d9797124ca4fcf34e4ee34ac
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 44
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98a17ac97b772664e82c8ae9246b14dc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 58
+        y: 45
         width: 4
         height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 214b3cfd5db684247a0322823529de0b
+      spriteID: 30aa725c2f48e1f47b3e759315be5028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_18
+      name: Worm Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 33
+        width: 15
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f234cc26eb9db142ab83c68e4ba1e5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 32
+        width: 16
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b993fcc8baf3e43b31c53b72a9ce05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 32
+        width: 19
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f929c99e6797d2841880e511b5de7cd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1
+        width: 15
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7368ed22ec0abc4690fed615c365a5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm Sprite Sheet_47
       rect:
         serializedVersion: 2
         x: 40
-        y: 58
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 1
+        width: 15
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eabd7981d888784aac92828eaecfd12
+      spriteID: 1114766aae93b0e4caa8e7d85a4ead21
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_19
+      name: Worm Sprite Sheet_48
       rect:
         serializedVersion: 2
-        x: 59
-        y: 44
-        width: 17
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0b123d77207aa2448483812fe617926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_20
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 61
-        width: 16
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67754c40a258e774a9f11d17dadfb908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_21
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 44
-        width: 17
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3bb7640d99ff18448f47eb0a9dedf26
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_22
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 44
-        width: 17
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7469f58a48372504e9403bf657e81b2a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_23
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 44
+        x: 71
+        y: 1
         width: 18
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6967f9b025160b14b878964e3a5f63b6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_24
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 44
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e535830701bf1d84a93d0eea41903bfc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_25
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 44
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3056a85deca72bd459810e87fc03d1a2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_26
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 44
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90c9bfa9b27d80a4d8b17f31434b81b7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_27
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 12
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e24f5de8efa73354294a2f16939146ae
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_30
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 12
-        width: 17
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 124403f374b3f5748ba88a2a59230b54
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_32
-      rect:
-        serializedVersion: 2
-        x: 94
-        y: 12
-        width: 17
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e96c3b81664b5054c8a1f7229f719683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_33
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 12
-        width: 18
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8eece1cacb7e9d94eb5c5dd122d590e0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_34
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 12
-        width: 17
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abfbcc252b7fbe247a23b538318d58d9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_35
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 11
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b080a90efc1272142b7481fdd5fa3ab8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_37
-      rect:
-        serializedVersion: 2
-        x: 188
-        y: 11
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5cccac26ff8175418c80c51d953f25e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_39
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 11
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 356b76acb13444044a7ded6053959606
+      spriteID: 20dde40c2623c7c49b099d43ca2fb737
       vertices: []
       indices: 
       edges: []
@@ -786,7 +864,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f6f920949505e3048ada56264d4a8dc9
+    spriteID: 303755f4ff9b5424597692f606781074
     vertices: []
     indices: 
     edges: []

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,16 +12,26 @@ public class ProjectileMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(speed * Time.deltaTime * dir, Space.World);
-        
-        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
-            Destroy(this.gameObject);
     }
 
-    void OnTriggerEnter2D (Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player") {
+        if (other.gameObject.GetComponent<Enemy>() != null)
+            return;
+            
+        if (other.tag == "Player")
+        {
             other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
-            Destroy(this.gameObject);
         }
+
+        InvokeRepeating("DestroyRoutine", 0f, 0.1f);
+    }
+
+    private void DestroyRoutine()
+    {
+        GetComponent<Animator>().Play("hitting");
+
+        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+            Destroy(this.gameObject);
     }
 }

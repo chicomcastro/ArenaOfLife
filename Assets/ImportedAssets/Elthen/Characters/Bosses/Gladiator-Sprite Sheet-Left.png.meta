@@ -1,45 +1,37 @@
 fileFormatVersion: 2
-guid: 081b50037c1565f45a2f06d869a0f85c
+guid: 294c179c0e12d5141ad286f901f0bfde
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Buff Totem anim1 begin
-    21300002: Buff Totem Sprite Sheet_1
-    21300004: Buff Totem Sprite Sheet_2
-    21300006: Buff Totem Sprite Sheet_3
-    21300008: Buff Totem Sprite Sheet_4
-    21300010: Buff Totem Sprite Sheet_5
-    21300012: Buff Totem Sprite Sheet_6
-    21300014: Buff Totem Sprite Sheet_7
-    21300016: Buff Totem Sprite Sheet_8
-    21300018: Buff Totem Sprite Sheet_9
-    21300020: Buff Totem anim1 end
-    21300022: Buff Totem Sprite Sheet_11
-    21300024: Buff Totem Sprite Sheet_12
-    21300026: Buff Totem Sprite Sheet_13
-    21300028: Buff Totem Sprite Sheet_14
-    21300030: Buff Totem Sprite Sheet_15
-    21300032: Buff Totem Sprite Sheet_16
-    21300034: Buff Totem Sprite Sheet_17
-    21300036: Buff Totem Sprite Sheet_18
-    21300038: Buff Totem Sprite Sheet_19
-    21300040: Buff Totem Sprite Sheet_20
-    21300042: Buff Totem Sprite Sheet_21
-    21300044: Buff Totem Sprite Sheet_22
-    21300046: Buff Totem Sprite Sheet_23
-    21300048: Buff Totem Sprite Sheet_24
-    21300050: Buff Totem Sprite Sheet_25
-    21300052: Buff Totem Sprite Sheet_26
-    21300054: Buff Totem Sprite Sheet_27
-    21300056: Buff Totem Sprite Sheet_28
-    21300058: Buff Totem Sprite Sheet_29
-    21300060: Buff Totem Sprite Sheet_30
-    21300062: Buff Totem Sprite Sheet_31
-    21300064: Buff Totem Sprite Sheet_32
-    21300066: Buff Totem Sprite Sheet_33
-    21300068: Buff Totem Sprite Sheet_34
-    21300070: Buff Totem Sprite Sheet_35
-    21300072: Buff Totem Sprite Sheet_37
-    21300074: Buff Totem Sprite Sheet_39
+    21300000: Gladiator idle
+    21300002: Gladiator-Sprite Sheet-Left_1
+    21300004: Gladiator-Sprite Sheet-Left_2
+    21300006: Gladiator-Sprite Sheet-Left_3
+    21300008: Gladiator-Sprite Sheet-Left_4
+    21300010: Gladiator moving
+    21300012: Gladiator-Sprite Sheet-Left_6
+    21300014: Gladiator-Sprite Sheet-Left_7
+    21300016: Gladiator-Sprite Sheet-Left_8
+    21300018: Gladiator-Sprite Sheet-Left_9
+    21300020: Gladiator-Sprite Sheet-Left_10
+    21300022: Gladiator-Sprite Sheet-Left_11
+    21300024: Gladiator-Sprite Sheet-Left_12
+    21300026: Gladiator attack
+    21300028: Gladiator-Sprite Sheet-Left_14
+    21300030: Gladiator-Sprite Sheet-Left_15
+    21300032: Gladiator-Sprite Sheet-Left_16
+    21300034: Gladiator-Sprite Sheet-Left_17
+    21300036: Gladiator-Sprite Sheet-Left_18
+    21300038: Gladiator-Sprite Sheet-Left_19
+    21300040: Gladiator damage
+    21300042: Gladiator-Sprite Sheet-Left_21
+    21300044: Gladiator-Sprite Sheet-Left_22
+    21300046: Gladiator death
+    21300048: Gladiator-Sprite Sheet-Left_24
+    21300050: Gladiator-Sprite Sheet-Left_25
+    21300052: Gladiator-Sprite Sheet-Left_26
+    21300054: Gladiator-Sprite Sheet-Left_27
+    21300056: Gladiator-Sprite Sheet-Left_28
+    21300058: Gladiator-Sprite Sheet-Left_29
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -144,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Buff Totem anim1 begin
+      name: Gladiator idle
       rect:
         serializedVersion: 2
-        x: 2
-        y: 108
+        x: 8
+        y: 129
         width: 17
-        height: 18
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,627 +150,587 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d1085d254984064d88459711d3b3e77
+      spriteID: fe691e6a3afb03f469d84184d67e4055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 108
-        width: 17
-        height: 19
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6f52d6deced1324d89d104386e0fc34
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 108
-        width: 17
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07bc57dcaa2b01a4cbd8bfbaa9f87ea5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 108
-        width: 17
-        height: 21
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b20b4111e529b10419e091d808193d1c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 108
-        width: 17
-        height: 22
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 033248ba66715dd4e813ff98b8afd919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 108
-        width: 17
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6021a325d7982943818b7064b7f021c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 108
-        width: 17
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 856cc58bda0934945854eeaeba0b4055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem anim1 end
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 108
-        width: 17
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f018979ad78059d4fb25dd284a8ee676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 76
-        width: 10
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a2da33534c677e4abc1318a140f45af
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 76
-        width: 22
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1ca97d7f3ba81a4eb9a2adf0b00f629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 76
-        width: 28
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bb4cb57853833a4b81a55b9c6ba0464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 76
-        width: 34
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36660a2d1ba154d4683dc900dc44a2ac
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 157
-        y: 76
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02aea467d9797124ca4fcf34e4ee34ac
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 44
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98a17ac97b772664e82c8ae9246b14dc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 58
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 214b3cfd5db684247a0322823529de0b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_18
+      name: Gladiator-Sprite Sheet-Left_1
       rect:
         serializedVersion: 2
         x: 40
-        y: 58
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4eabd7981d888784aac92828eaecfd12
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_19
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 44
+        y: 129
         width: 17
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0b123d77207aa2448483812fe617926
+      spriteID: f62fcd0c6b7ad4846b06c6a1fd986e8b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_20
+      name: Gladiator-Sprite Sheet-Left_2
       rect:
         serializedVersion: 2
-        x: 59
-        y: 61
-        width: 16
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67754c40a258e774a9f11d17dadfb908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_21
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 44
+        x: 72
+        y: 129
         width: 17
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3bb7640d99ff18448f47eb0a9dedf26
+      spriteID: d00e8161280c7dc45ae290ba87c350ef
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_22
+      name: Gladiator-Sprite Sheet-Left_3
       rect:
         serializedVersion: 2
-        x: 118
-        y: 44
+        x: 104
+        y: 129
         width: 17
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05d456e65c5f774293d0161d99a7f3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 129
+        width: 17
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708af15ab23c0b445b10447bcf114a82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator moving
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 97
+        width: 21
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d855a7075f80cdd48a06f84403cb53ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 97
+        width: 21
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73aa868a110fd2f48aff5170238a3a42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_7
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 97
+        width: 21
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fdc55a75750a340b91b7af83c609a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_8
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 97
+        width: 21
         height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7469f58a48372504e9403bf657e81b2a
+      spriteID: a7c2bdb00fb533a4da4c2cbd9da8ae32
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_23
+      name: Gladiator-Sprite Sheet-Left_9
       rect:
         serializedVersion: 2
-        x: 2
-        y: 44
-        width: 18
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 134
+        y: 97
+        width: 21
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6967f9b025160b14b878964e3a5f63b6
+      spriteID: 111dc711980ff6e449c1c89492492d7e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_24
+      name: Gladiator-Sprite Sheet-Left_10
       rect:
         serializedVersion: 2
-        x: 143
-        y: 44
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 166
+        y: 97
+        width: 21
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e535830701bf1d84a93d0eea41903bfc
+      spriteID: 890c06e4b6dddd14187919c176868251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_25
+      name: Gladiator-Sprite Sheet-Left_11
       rect:
         serializedVersion: 2
-        x: 170
-        y: 44
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 198
+        y: 97
+        width: 21
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3056a85deca72bd459810e87fc03d1a2
+      spriteID: ca51a472ec828fe43874b680d677f332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_26
+      name: Gladiator-Sprite Sheet-Left_12
       rect:
         serializedVersion: 2
-        x: 197
-        y: 44
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 230
+        y: 97
+        width: 21
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90c9bfa9b27d80a4d8b17f31434b81b7
+      spriteID: 1c45d113f50b87449aa27c045cb84c95
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_27
+      name: Gladiator attack
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 65
+        width: 21
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637b3c4b1fd8f26428f7b10bd057eaa0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_14
       rect:
         serializedVersion: 2
         x: 32
-        y: 12
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 65
+        width: 27
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e24f5de8efa73354294a2f16939146ae
+      spriteID: 9e38946afcd11774383ac4ff6d8cb8e4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_30
+      name: Gladiator-Sprite Sheet-Left_15
       rect:
         serializedVersion: 2
-        x: 63
-        y: 12
+        x: 65
+        y: 65
+        width: 27
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf253b08e21cd504a95f8136ed7f0898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 65
+        width: 28
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3189ad59d5873c9458dd1b3fd7f634c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 65
+        width: 27
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b00a7b8f88855644a8ae9c2f5d61899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_18
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 65
+        width: 21
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff56be27ceba7014eb587ac1a393480b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_19
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 65
         width: 17
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd776ac0a0f2414a9db851aee865617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator damage
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 33
+        width: 17
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9935b111ec87b5149b674dc3d3b19185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_21
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 33
+        width: 19
         height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 124403f374b3f5748ba88a2a59230b54
+      spriteID: 71dc46b77b736e5449dea8d47eec31ac
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_32
+      name: Gladiator-Sprite Sheet-Left_22
       rect:
         serializedVersion: 2
-        x: 94
-        y: 12
+        x: 69
+        y: 33
+        width: 22
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78056957cfe99704f996ad8da31def05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator death
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1
         width: 17
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e96c3b81664b5054c8a1f7229f719683
+      spriteID: 0818f59bdacfc7c46a56e65380acba30
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_33
+      name: Gladiator-Sprite Sheet-Left_24
       rect:
         serializedVersion: 2
-        x: 2
-        y: 12
-        width: 18
+        x: 39
+        y: 1
+        width: 19
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d52e2f7710d9a4db7e68cf1a5e512b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_25
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1
+        width: 22
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c8ec9348f5ce045b3493e93ee1e53d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gladiator-Sprite Sheet-Left_26
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1
+        width: 19
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8eece1cacb7e9d94eb5c5dd122d590e0
+      spriteID: d30f3fe735b4e8d4781883bab3ad17dc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_34
+      name: Gladiator-Sprite Sheet-Left_27
       rect:
         serializedVersion: 2
-        x: 125
-        y: 12
-        width: 17
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abfbcc252b7fbe247a23b538318d58d9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_35
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 11
+        x: 133
+        y: 1
         width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b080a90efc1272142b7481fdd5fa3ab8
+      spriteID: da6185bd90eb22841851588653a06e7e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_37
+      name: Gladiator-Sprite Sheet-Left_28
       rect:
         serializedVersion: 2
-        x: 188
-        y: 11
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 164
+        y: 1
+        width: 25
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5cccac26ff8175418c80c51d953f25e
+      spriteID: 3415f34695d2622478ab459a2fb50c5c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buff Totem Sprite Sheet_39
+      name: Gladiator-Sprite Sheet-Left_29
       rect:
         serializedVersion: 2
-        x: 219
-        y: 11
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 194
+        y: 1
+        width: 27
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 356b76acb13444044a7ded6053959606
+      spriteID: 022983077261cd24db1d7cd7cbbcc84b
       vertices: []
       indices: 
       edges: []
@@ -786,7 +738,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f6f920949505e3048ada56264d4a8dc9
+    spriteID: 10b997503c5e6a448bf936961dde0a18
     vertices: []
     indices: 
     edges: []

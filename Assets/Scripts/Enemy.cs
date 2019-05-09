@@ -47,13 +47,30 @@ public class Enemy : MonoBehaviour
                         BT.Call(ReturnHome)
                     ),
                     BT.Sequence().OpenBranch(
-                        BT.Wait(1.0f),
+                        BT.Call(Rest),
+                        BT.Wait(2.0f),
                         BT.Call(Turn)
                     )
-                    //BT.Call(Patrol)
                 )
             )
         );
+    }
+
+    private bool TestVisibleTarget()
+    {
+        if (SameDirection(dir, facingDir))
+        {
+            LayerMask layerMask = 1 << 8;
+            layerMask = ~layerMask;
+
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, Mathf.Infinity, layerMask);
+            if (hit.collider.gameObject.tag == "Player")
+                return true;
+
+            return false;
+        }
+
+        return false;
     }
 
     private bool AwayFromHome()
@@ -68,7 +85,7 @@ public class Enemy : MonoBehaviour
 
     private void Aim(Vector3 dir)
     {
-        if (Vector3.Dot(facingDir, dir) < 0)
+        if (!SameDirection(facingDir, dir))
             Turn();
     }
 
@@ -105,9 +122,9 @@ public class Enemy : MonoBehaviour
         MoveOn(dir);
     }
 
-    private bool PlayerInTerritory()
+    private bool PlayerInTerritory()  // Preceeds Follow
     {
-        if (dir.magnitude < stats.searchingRange)
+        if (dir.magnitude < stats.searchingRange && TestVisibleTarget())
         {
             return true;
         }
@@ -115,14 +132,21 @@ public class Enemy : MonoBehaviour
         return false;
     }
 
-    private bool PlayerInRange()
+    private bool PlayerInRange()  // Preceeds Attack
     {
-        if (dir.magnitude < stats.attackRange)
+        if (dir.magnitude < stats.attackRange && TestVisibleTarget())
         {
             return true;
         }
 
         return false;
+    }
+
+    private bool SameDirection(Vector3 dir, Vector2 facingDir)
+    {
+        if (Vector3.Dot(facingDir, dir) < 0)
+            return false;
+        return true;
     }
 
     // Use this for initialization
@@ -229,6 +253,6 @@ public class Enemy : MonoBehaviour
     {
         stats.HP -= _damage;
 
-        lastAttackTime = Time.time - stats.attackCooldown/2;
+        lastAttackTime = Time.time - stats.attackCooldown / 2;
     }
 }
