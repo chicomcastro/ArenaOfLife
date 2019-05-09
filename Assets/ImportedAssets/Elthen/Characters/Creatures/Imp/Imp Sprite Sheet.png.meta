@@ -1,73 +1,81 @@
 fileFormatVersion: 2
-guid: e96ff8efb8e78d54caffdf768068c91b
+guid: e339a2980f2409242b9975db218f4975
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Leaf Elemental idle
-    21300002: Leaf Elemental S Sprite Sheet_1
-    21300004: Leaf Elemental S Sprite Sheet_2
-    21300006: Leaf Elemental S Sprite Sheet_3
-    21300008: Leaf Elemental S Sprite Sheet_4
-    21300010: Leaf Elemental moving
-    21300012: Leaf Elemental S Sprite Sheet_6
-    21300014: Leaf Elemental S Sprite Sheet_7
-    21300016: Leaf Elemental S Sprite Sheet_8
-    21300018: Leaf Elemental S Sprite Sheet_9
-    21300020: Leaf Elemental attack1
-    21300022: Leaf Elemental S Sprite Sheet_11
-    21300024: Leaf Elemental S Sprite Sheet_12
-    21300026: Leaf Elemental S Sprite Sheet_13
-    21300028: Leaf Elemental S Sprite Sheet_14
-    21300030: Leaf Elemental damage
-    21300032: Leaf Elemental S Sprite Sheet_16
-    21300034: Leaf Elemental S Sprite Sheet_17
-    21300036: Leaf Elemental S Sprite Sheet_18
-    21300038: Leaf Elemental S Sprite Sheet_19
-    21300040: Leaf Elemental death
-    21300042: Leaf Elemental S Sprite Sheet_21
-    21300044: Leaf Elemental S Sprite Sheet_22
-    21300046: Leaf Elemental S Sprite Sheet_23
-    21300048: Leaf Elemental S Sprite Sheet_24
-    21300050: Leaf Elemental S Sprite Sheet_25
-    21300052: Leaf Elemental S Sprite Sheet_26
-    21300054: Leaf Elemental attack2
-    21300056: Leaf Elemental S Sprite Sheet_28
-    21300058: Leaf Elemental S Sprite Sheet_29
-    21300060: Leaf Elemental S Sprite Sheet_30
-    21300062: Leaf Elemental S Sprite Sheet_31
-    21300064: Leaf Elemental S Sprite Sheet_32
-    21300066: Leaf Elemental S Sprite Sheet_33
-    21300068: Leaf Elemental S Sprite Sheet_34
-    21300070: Leaf Elemental S Sprite Sheet_35
-    21300072: Leaf Elemental S Sprite Sheet_36
-    21300074: Leaf Elemental S Sprite Sheet_37
-    21300076: Leaf Elemental S Sprite Sheet_38
-    21300078: Leaf Elemental S Sprite Sheet_39
-    21300080: Leaf Elemental S Sprite Sheet_40
-    21300082: Leaf Elemental S Sprite Sheet_41
-    21300084: Leaf Elemental S Sprite Sheet_42
-    21300086: Leaf Elemental S Sprite Sheet_43
-    21300088: Leaf Elemental S Sprite Sheet_44
-    21300090: Leaf Elemental S Sprite Sheet_45
-    21300092: Leaf Elemental S Sprite Sheet_46
-    21300094: Leaf Elemental S Sprite Sheet_47
-    21300096: Leaf Elemental S Sprite Sheet_48
-    21300098: Leaf Elemental S Sprite Sheet_49
-    21300100: Leaf Elemental S Sprite Sheet_50
-    21300102: Leaf Elemental S Sprite Sheet_51
-    21300104: Leaf Elemental S Sprite Sheet_52
-    21300106: Leaf Elemental S Sprite Sheet_53
-    21300108: Leaf Elemental S Sprite Sheet_54
-    21300110: Leaf Elemental S Sprite Sheet_55
-    21300112: Leaf Elemental S Sprite Sheet_56
-    21300114: Leaf Elemental S Sprite Sheet_57
-    21300116: Leaf Elemental S Sprite Sheet_58
-    21300118: Leaf Elemental S Sprite Sheet_59
-    21300120: Leaf Elemental S Sprite Sheet_60
-    21300122: Leaf Elemental S Sprite Sheet_61
-    21300124: Leaf Elemental S Sprite Sheet_62
-    21300126: Leaf Elemental S Sprite Sheet_63
-    21300128: Leaf Elemental S Sprite Sheet_64
-    21300130: Leaf Elemental S Sprite Sheet_65
+    21300000: Imp Sprite Sheet_0 idle
+    21300002: Imp Sprite Sheet_1
+    21300004: Imp Sprite Sheet_2
+    21300006: Imp Sprite Sheet_3
+    21300008: Imp Sprite Sheet_4
+    21300010: Imp Sprite Sheet_5
+    21300012: Imp Sprite Sheet_6
+    21300014: Imp Sprite Sheet_7 moving
+    21300016: Imp Sprite Sheet_8
+    21300018: Imp Sprite Sheet_9
+    21300020: Imp Sprite Sheet_10
+    21300022: Imp Sprite Sheet_11
+    21300024: Imp Sprite Sheet_12
+    21300026: Imp Sprite Sheet_13
+    21300028: Imp Sprite Sheet_14
+    21300030: Imp Sprite Sheet_15 attack
+    21300032: Imp Sprite Sheet_16
+    21300034: Imp Sprite Sheet_17
+    21300036: Imp Sprite Sheet_18
+    21300038: Imp Sprite Sheet_19
+    21300040: Imp Sprite Sheet_20
+    21300042: Imp Sprite Sheet_21 damage
+    21300044: Imp Sprite Sheet_22
+    21300046: Imp Sprite Sheet_23
+    21300048: Imp Sprite Sheet_24
+    21300050: Imp Sprite Sheet_25 death
+    21300052: Imp Sprite Sheet_26
+    21300054: Imp Sprite Sheet_27
+    21300056: Imp Sprite Sheet_28
+    21300058: Imp Sprite Sheet_29
+    21300060: Imp Sprite Sheet_30
+    21300062: Imp Sprite Sheet_31
+    21300064: Imp Sprite Sheet_32
+    21300066: Imp Sprite Sheet_33
+    21300068: Imp Sprite Sheet_34
+    21300070: Imp Sprite Sheet_35
+    21300072: Imp Sprite Sheet_36
+    21300074: Imp Sprite Sheet_37
+    21300076: Imp Sprite Sheet_38
+    21300078: Imp Sprite Sheet_39
+    21300080: Imp Sprite Sheet_40
+    21300082: Imp Sprite Sheet_41
+    21300084: Imp Sprite Sheet_42
+    21300086: Imp Sprite Sheet_43
+    21300088: Imp Sprite Sheet_44
+    21300090: Imp Sprite Sheet_45
+    21300092: Imp Sprite Sheet_46
+    21300094: Imp Sprite Sheet_47
+    21300096: Imp Sprite Sheet_48
+    21300098: Imp Sprite Sheet_49
+    21300100: Imp Sprite Sheet_50
+    21300102: Imp Sprite Sheet_51
+    21300104: Imp Sprite Sheet_52
+    21300106: Imp Sprite Sheet_53
+    21300108: Imp Sprite Sheet_54
+    21300110: Imp Sprite Sheet_55
+    21300112: Imp Sprite Sheet_56
+    21300114: Imp Sprite Sheet_57
+    21300116: Imp Sprite Sheet_58
+    21300118: Imp Sprite Sheet_59
+    21300120: Imp Sprite Sheet_60
+    21300122: Imp Sprite Sheet_61
+    21300124: Imp Sprite Sheet_62
+    21300126: Imp Sprite Sheet_63
+    21300128: Imp Sprite Sheet_64
+    21300130: Imp Sprite Sheet_65
+    21300132: Imp Sprite Sheet_66
+    21300134: Imp Sprite Sheet_67
+    21300136: Imp Sprite Sheet_68
+    21300138: Imp fireball
+    21300140: Imp Sprite Sheet_7
+    21300142: Imp Sprite Sheet_15
+    21300144: Imp Sprite Sheet_21
+    21300146: Imp Sprite Sheet_25
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -172,12 +180,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Leaf Elemental idle
+      name: Imp Sprite Sheet_0 idle
       rect:
         serializedVersion: 2
-        x: 9
+        x: 7
         y: 352
-        width: 10
+        width: 15
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -186,38 +194,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fb9d637bf2d6334987350fbb28f3cd3
+      spriteID: 90843b3ff6143684cb859eba5ef7b1b7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_1
+      name: Imp Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 41
+        x: 39
         y: 352
-        width: 10
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd9411ab4acf2034887b210648ae5fa1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 352
-        width: 10
+        width: 15
         height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -226,18 +214,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce7ab047b6d3eb542bf7dfe5252d027c
+      spriteID: aac07dc2f63de4f41b6a69c9a4bc6f7f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_3
+      name: Imp Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 104
+        x: 71
         y: 352
-        width: 12
+        width: 15
         height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -246,18 +234,78 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b027cabecd3d6845a8338fca8cf133f
+      spriteID: 1dd41bc497b82e747856231f14af70b5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_4
+      name: Imp Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 136
+        x: 103
         y: 352
-        width: 12
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c283a32689ad8714da4b327e05a1e3a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 352
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c01b88c27e3d3242a30298c39668725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 352
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e880c314f404a149b2c87edb3955b30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 352
+        width: 15
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -266,38 +314,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80b7523c21389094bad000675acfff95
+      spriteID: 41d267894f36a3f42b727bec25b4b854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental moving
+      name: Imp Sprite Sheet_7 moving
       rect:
         serializedVersion: 2
-        x: 8
+        x: 7
         y: 320
-        width: 12
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f39b3f5cc080dea44b1a07a7e209b826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 320
-        width: 12
+        width: 15
         height: 14
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -306,18 +334,158 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 618213b23445925479917d33c4e70e2b
+      spriteID: b66067cd0bab34b44bb1d1bd5b765f66
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_7
+      name: Imp Sprite Sheet_8
       rect:
         serializedVersion: 2
-        x: 73
+        x: 39
         y: 320
-        width: 10
+        width: 15
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786ab6bcde6eb654bbfe17631fb3ab05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 320
+        width: 15
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebadf19c82653054d8d90fe20936b9aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 320
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fa1f197efcc8a47a8c761f2b5f74d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 320
+        width: 15
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f222489547f024e82a66e937b0d261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 320
+        width: 14
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94035cb06cbf5444a3f0a8c245d3b86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 320
+        width: 15
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deae71a5530953f43b28a645dff48b8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 320
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9b08d130fb94b4f842aac9b75e96de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_15 attack
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 288
+        width: 14
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -326,18 +494,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53256bc735ba02d41b25fcd1f60e18fd
+      spriteID: 4eaa55c5149894842b8ad8fd366e923f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_8
+      name: Imp Sprite Sheet_16
       rect:
         serializedVersion: 2
-        x: 105
-        y: 320
-        width: 10
+        x: 40
+        y: 288
+        width: 13
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -346,18 +514,138 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cd583c4cfb1dd046a4226d0ae184707
+      spriteID: 603cbb4567b0a5642984842bd0743997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_9
+      name: Imp Sprite Sheet_17
       rect:
         serializedVersion: 2
-        x: 137
-        y: 320
-        width: 10
+        x: 71
+        y: 288
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1635ffa53f08f804e8ccb230edeadddf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 288
+        width: 16
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7501c93788d34f4ea6178833c190536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 288
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27fa28244e925b4d829f1e55e7d607b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 288
+        width: 15
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c884948ba2f4b40a6d88987f9246d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_21 damage
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 256
+        width: 15
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea6477a5d6ac3441aea5dfb824f5844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 256
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2117faf41625d304eb21cfcea0cd1bf3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 256
+        width: 15
         height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -366,98 +654,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2db79e45142821498c4e6ec147c782c
+      spriteID: 47feb27af8135554bb19e518093359f5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental attack1
+      name: Imp Sprite Sheet_24
       rect:
         serializedVersion: 2
-        x: 9
-        y: 288
-        width: 10
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ca86acc993736e42b0afe5b8f76b75b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 288
-        width: 12
-        height: 19
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a3b67fa4c14ffe438d1e885c9a22253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 288
-        width: 12
-        height: 19
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88a8354053e71064b9999fde2ab711f9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 288
-        width: 12
-        height: 19
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6bc757e48d4c85342bcb30aba21f517e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 288
-        width: 10
+        x: 104
+        y: 256
+        width: 15
         height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -466,18 +674,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f58867c4a47d77543aa40abe7af0fbdc
+      spriteID: 0b44b0a8db15a394891826eb73b2164e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental damage
+      name: Imp Sprite Sheet_25 death
       rect:
         serializedVersion: 2
-        x: 9
-        y: 256
-        width: 10
+        x: 8
+        y: 224
+        width: 15
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -486,58 +694,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 289551b1388fda54ab1583fe50f26b62
+      spriteID: 76925a2d57ea35240874eb33b3f17429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_16
+      name: Imp Sprite Sheet_26
       rect:
         serializedVersion: 2
-        x: 39
-        y: 256
-        width: 13
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffea2aa58772c7a4ab4abfdd6ff3377a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 256
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d153a4bf8fb7bd45ad866301b12c3df
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_18
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 256
-        width: 10
+        x: 40
+        y: 224
+        width: 15
         height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -546,19 +714,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2c976c5d065c884fa2346ed34fc29e5
+      spriteID: 49a12bc1053d0a240b480b09f386ae27
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_19
+      name: Imp Sprite Sheet_27
       rect:
         serializedVersion: 2
-        x: 137
-        y: 256
-        width: 10
-        height: 12
+        x: 72
+        y: 224
+        width: 15
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -566,78 +734,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aacf5ba1e0a58fb4595c03cd72af01ff
+      spriteID: 7499e73b78915284f975ea0468b7ef38
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental death
+      name: Imp Sprite Sheet_28
       rect:
         serializedVersion: 2
-        x: 9
+        x: 104
         y: 224
-        width: 10
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5163c71af1a26a4b8319ff7f2e34be9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_21
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 224
-        width: 13
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2605778075f1e994c945cafeb87fe7ab
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_22
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 224
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50f0d76512ada004d9319824bb683bf9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_23
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 224
-        width: 10
+        width: 15
         height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -646,58 +754,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc54efada4ab01345aa084c2824c9f7a
+      spriteID: 86d60bd6b5087ef4ab99c9fd77f22279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_24
+      name: Imp Sprite Sheet_29
       rect:
         serializedVersion: 2
-        x: 136
+        x: 135
         y: 224
-        width: 12
-        height: 7
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ddc412b3b69f344492f5cf69a5adfb9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_25
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 224
-        width: 12
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ba54d78fb848a64eb08e372e759ba86
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_26
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 224
-        width: 15
+        width: 16
         height: 9
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -706,19 +774,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa014a5770951874e92d78d42f030526
+      spriteID: 5b191d3a8883b85439e579f62f8ae8f4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental attack2
+      name: Imp Sprite Sheet_30
       rect:
         serializedVersion: 2
-        x: 9
-        y: 192
-        width: 10
-        height: 13
+        x: 167
+        y: 224
+        width: 16
+        height: 9
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -726,638 +794,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c05e26e70a4f4948b28199a078b6051
+      spriteID: 65c5f872f3133144887bb8d89ed6ed6b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_28
+      name: Imp Sprite Sheet_31
       rect:
         serializedVersion: 2
-        x: 40
-        y: 192
-        width: 10
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4ea3003548b0cc40a8ee7386ba51262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_29
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 192
-        width: 11
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 124df290305be9b4d881d2a30556e9bf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_30
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 192
-        width: 21
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f138ed3127220f24f96c7e6b7891b9ac
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_31
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 192
-        width: 21
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47457a5763b818541b9ac2a1be93ef09
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_32
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 192
-        width: 21
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bac01c5e534381c4dbf498ac62165200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_33
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 160
-        width: 10
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cd965968f87a4d4bb5cf45d17cf6629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_34
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 160
-        width: 10
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cd03268d9f673f4d9d8923c3526b1b0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_35
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 160
-        width: 10
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1aa1b629a22f05469ba43e8d81a67f2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_36
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 160
-        width: 12
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed8b13b991af96844a223eb62cd407d7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_37
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 160
-        width: 12
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f0a3fb74ac74b549ba0c7e52c7576dc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_38
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 128
-        width: 12
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fed61737e27789348bc9e6f50c4ca03e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_39
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 130
-        width: 12
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b0afb52be469f543b6db1671b26d078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_40
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 129
-        width: 10
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5444a92b8c59c7e49b771aa1ca917eef
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_41
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 128
-        width: 10
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a318285655694354fad7238a0471b7e6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_42
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 128
-        width: 10
-        height: 11
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc6231f69a3313b4995a4c28d15305c6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_43
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 96
-        width: 10
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd7ceb49dcfa37842abb63381188b8c6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_44
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 97
-        width: 12
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcc6e16befe62ef4cb0793f48a6190c7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_45
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 100
-        width: 12
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b7378dd534745f4f9f5204c65603cb7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_46
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 97
-        width: 12
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3190d9e74af070f438e730f35a60363a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_47
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 96
-        width: 10
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7673dbf4a8196544babaf4be10543d2d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_48
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 64
-        width: 10
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e93d42f50357674a99b58f41234b9c7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_49
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 64
-        width: 13
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a00b6738dda02d9499a97c77739c0267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_50
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 64
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fbd8982e01246840acef02e38686d37
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_51
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 64
-        width: 10
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e2a17d7fde229b47b93a81ff85f38f2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_52
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 64
-        width: 10
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fffbe3b1cd6ed014ca1fe10c5582b20a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_53
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 32
-        width: 10
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32be642a9d3ac7846a97a8a601c33205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_54
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 32
-        width: 13
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4aa3d645cb09f6145b5219657b7c0507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_55
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 32
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa0488440732e1a4c93cafcd525dfd47
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_56
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 32
-        width: 10
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86dd681ac50d6ba419e03bcc59fa8fa4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_57
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 32
-        width: 12
-        height: 7
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ef475f141b977341bab888e38eaaedf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_58
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 37
+        x: 218
+        y: 193
         width: 4
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40985d10c2408794897d952293b87bc5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_59
-      rect:
-        serializedVersion: 2
-        x: 172
-        y: 32
-        width: 45
         height: 8
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1366,18 +814,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d045061c0b90df445baaf3acc3abd868
+      spriteID: 335f24ee83664774989d582faaaf8460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_60
+      name: Imp Sprite Sheet_32
       rect:
         serializedVersion: 2
-        x: 13
-        y: 0
-        width: 10
+        x: 10
+        y: 160
+        width: 15
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1386,18 +834,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f3a0790fc8acb44c9a568bddfaa2948
+      spriteID: 9700a8584e27bf24c8ba433cc8dde8ba
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_61
+      name: Imp Sprite Sheet_33
       rect:
         serializedVersion: 2
-        x: 46
-        y: 0
-        width: 10
+        x: 42
+        y: 160
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0321fbcd23eb2469cfe4f7958a10f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 160
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d21d1331a0ba5489f09a195f8af4dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 160
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbaa432d7c39d314a834551558d66167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 160
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00232d1aa96c2de4da4c758fd464ca62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 160
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee595c811a05c00469bc8b58d8916868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 129
+        width: 15
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1406,18 +954,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d6f9c4602b6f744f85c469616e15a34
+      spriteID: 980e57eabd549f347a0b876e516c9af8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_62
+      name: Imp Sprite Sheet_39
       rect:
         serializedVersion: 2
-        x: 78
-        y: 0
-        width: 11
+        x: 42
+        y: 130
+        width: 15
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db3d7866aa044744ba249a969dcdeb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 129
+        width: 15
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68336c78d0f994345b194e43572a097a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 128
+        width: 15
         height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1426,18 +1014,78 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fd5e9671e2c0664f9c2b996e8817179
+      spriteID: 34d9a4a1b7797444d94cd04a5693153c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_63
+      name: Imp Sprite Sheet_42
       rect:
         serializedVersion: 2
-        x: 98
-        y: 0
-        width: 21
+        x: 138
+        y: 129
+        width: 15
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651a8da1ce4e4394d90c4541661abc3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 130
+        width: 14
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665c86c1819e48943a8ac6f3f13e0c50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 129
+        width: 15
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7767c34f1f1bd6a408848eea9529af36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 128
+        width: 15
         height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1446,19 +1094,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c496c21fdbf1f741b31a27eb9acde86
+      spriteID: 2cfb32d7da393ef458d52155edd88789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_64
+      name: Imp Sprite Sheet_46
       rect:
         serializedVersion: 2
-        x: 130
-        y: 0
-        width: 21
-        height: 15
+        x: 10
+        y: 96
+        width: 14
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1466,19 +1114,299 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c011ca3f05dc8af479658d217bd222cb
+      spriteID: 1e433b99318e0394abf82a7b0b87849e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leaf Elemental S Sprite Sheet_65
+      name: Imp Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 96
+        width: 13
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528e94725ca78454d9f9b8822328393d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 96
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504d3c7db3406324587f66b1aa7e3901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 96
+        width: 16
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce98956df8c08cd4b85e9cbff7ea7ce0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 96
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8b80bc8ae5f7045bdeee4fd2917945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 96
+        width: 15
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c02f143c03e4d540a0cd9887474fa18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 64
+        width: 15
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be876857ad86c454796b4f6f78f41f03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 64
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d57c471e172b542a0b4539741f5d56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 64
+        width: 15
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcada66cff7cb940ab41118ae810684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 64
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65c24ce68cc62b4dbd9417c7cf90562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 6
+        width: 15
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7723cd2d5806c454ca15351adb1188c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 32
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62138f9052a08f479477ea2ba79cbac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 4
+        width: 81
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6b55c6da7a6b044bce54170e0345ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 32
+        width: 15
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2f5f48b8fcc3442a06fc30cf39fa77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 32
+        width: 16
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be393e4799d785548a56c07e557da569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_61
       rect:
         serializedVersion: 2
         x: 162
-        y: 0
-        width: 21
-        height: 13
+        y: 1
+        width: 36
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1486,7 +1414,127 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fbadfe773cd64846994a5a34a8b372b
+      spriteID: aee1a2a6907f80f4ca17e1eb79bedfea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp fireball
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 198
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb51f6d462f9ef45b3c923c3fec32bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 196
+        width: 3
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d1bb3da6ea57e47ae99f8b50d51d93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 197
+        width: 19
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9c57a54cab95d44a467d103e3b68cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 197
+        width: 9
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5744ab7fde6c52f4e83a4d5056f59253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 197
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f033fdb4b2b8cc4aa7fd3aa3d797584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp Sprite Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 195
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09424f202cb06584da55ff192b5ba54c
       vertices: []
       indices: 
       edges: []
@@ -1494,7 +1542,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f755953de760c81418a3b1ae2515d46d
+    spriteID: a33581f9a56fd144483a6e97b53ce2bf
     vertices: []
     indices: 
     edges: []

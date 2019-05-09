@@ -13,15 +13,15 @@ TextureImporter:
     21300016: Ice Elemental Sprite Sheet_8
     21300018: Ice Elemental Sprite Sheet_9
     21300020: Ice Elemental attack1
-    21300022: Ice Elemental Sprite Sheet_11
-    21300024: Ice Elemental Sprite Sheet_12
-    21300026: Ice Elemental Sprite Sheet_13
-    21300028: Ice Elemental Sprite Sheet_14
-    21300030: Ice Elemental Sprite Sheet_15
-    21300032: Ice Elemental Sprite Sheet_16
-    21300034: Ice Elemental Sprite Sheet_17
-    21300036: Ice Elemental Sprite Sheet_18
-    21300038: Ice Elemental attack2
+    21300022: Ice Elemental attack1 4
+    21300024: Ice Elemental attack1 5
+    21300026: Ice Elemental attack1 6
+    21300028: Ice Elemental attack1 7
+    21300030: Ice Elemental attack1 8
+    21300032: Ice Elemental attack1 9
+    21300034: Ice Elemental attack1 2
+    21300036: Ice Elemental attack1 3
+    21300038: Ice Elemental Sprite Sheet_19 attack2
     21300040: Ice Elemental Sprite Sheet_20
     21300042: Ice Elemental Sprite Sheet_21
     21300044: Ice Elemental Sprite Sheet_22
@@ -29,15 +29,15 @@ TextureImporter:
     21300048: Ice Elemental Sprite Sheet_24
     21300050: Ice Elemental Sprite Sheet_25
     21300052: Ice Elemental Sprite Sheet_26
-    21300054: Ice Elemental attack3
+    21300054: Ice Elemental Sprite Sheet_27 attack3
     21300056: Ice Elemental Sprite Sheet_28
     21300058: Ice Elemental Sprite Sheet_29
     21300060: Ice Elemental Sprite Sheet_30
     21300062: Ice Elemental Sprite Sheet_32
-    21300064: Ice Elemental damage
+    21300064: Ice Elemental Sprite Sheet_33 damage
     21300066: Ice Elemental Sprite Sheet_34
     21300068: Ice Elemental Sprite Sheet_35
-    21300070: Ice Elemental death
+    21300070: Ice Elemental Sprite Sheet_36 death
     21300072: Ice Elemental Sprite Sheet_37
     21300074: Ice Elemental Sprite Sheet_38
     21300076: Ice Elemental Sprite Sheet_39
@@ -412,7 +412,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental Sprite Sheet_11
+      name: Ice Elemental attack1 4
       rect:
         serializedVersion: 2
         x: 106
@@ -432,7 +432,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental Sprite Sheet_12
+      name: Ice Elemental attack1 5
       rect:
         serializedVersion: 2
         x: 138
@@ -452,7 +452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental Sprite Sheet_13
+      name: Ice Elemental attack1 6
       rect:
         serializedVersion: 2
         x: 170
@@ -472,7 +472,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental Sprite Sheet_14
+      name: Ice Elemental attack1 7
       rect:
         serializedVersion: 2
         x: 202
@@ -492,7 +492,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental Sprite Sheet_15
+      name: Ice Elemental attack1 8
       rect:
         serializedVersion: 2
         x: 234
@@ -512,7 +512,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental Sprite Sheet_16
+      name: Ice Elemental attack1 9
       rect:
         serializedVersion: 2
         x: 266
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental Sprite Sheet_17
+      name: Ice Elemental attack1 2
       rect:
         serializedVersion: 2
         x: 42
@@ -552,7 +552,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental Sprite Sheet_18
+      name: Ice Elemental attack1 3
       rect:
         serializedVersion: 2
         x: 73
@@ -572,7 +572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental attack2
+      name: Ice Elemental Sprite Sheet_19 attack2
       rect:
         serializedVersion: 2
         x: 10
@@ -732,7 +732,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental attack3
+      name: Ice Elemental Sprite Sheet_27 attack3
       rect:
         serializedVersion: 2
         x: 10
@@ -832,7 +832,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental damage
+      name: Ice Elemental Sprite Sheet_33 damage
       rect:
         serializedVersion: 2
         x: 10
@@ -892,7 +892,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice Elemental death
+      name: Ice Elemental Sprite Sheet_36 death
       rect:
         serializedVersion: 2
         x: 10
@@ -1900,7 +1900,7 @@ TextureImporter:
         width: 16
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

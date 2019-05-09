@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: f53d16a0507ab314e90681361f71893e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Worm idle
+    21300000: Worm Sprite Sheet_0 idle
     21300002: Worm Sprite Sheet_1
     21300004: Worm Sprite Sheet_2
     21300006: Worm Sprite Sheet_3
@@ -10,7 +10,7 @@ TextureImporter:
     21300010: Worm Sprite Sheet_5
     21300012: Worm Sprite Sheet_6
     21300014: Worm Sprite Sheet_7
-    21300016: Worm moving
+    21300016: Worm Sprite Sheet_8 moving
     21300018: Worm Sprite Sheet_9
     21300020: Worm Sprite Sheet_10
     21300022: Worm Sprite Sheet_11
@@ -18,24 +18,24 @@ TextureImporter:
     21300026: Worm Sprite Sheet_13
     21300028: Worm Sprite Sheet_14
     21300030: Worm Sprite Sheet_15
-    21300032: Worm damage
+    21300032: Worm Sprite Sheet_16 damage
     21300034: Worm Sprite Sheet_17
     21300036: Worm Sprite Sheet_18
     21300038: Worm Sprite Sheet_19
-    21300040: Worm death
+    21300040: Worm Sprite Sheet_20 death
     21300042: Worm Sprite Sheet_21
     21300044: Worm Sprite Sheet_22
     21300046: Worm Sprite Sheet_23
     21300048: Worm Sprite Sheet_24
     21300050: Worm Sprite Sheet_25
-    21300052: Worm Sprite Sheet_26
-    21300054: Worm Sprite Sheet_29
-    21300056: Worm Sprite Sheet_33
+    21300052: Worm Sprite Sheet_26 hole front
+    21300054: Worm Sprite Sheet_29 hole behind
+    21300056: Worm Sprite Sheet_42 a
     21300058: Worm Sprite Sheet_34
-    21300060: Worm Sprite Sheet_39
+    21300060: Worm Sprite Sheet_39 hole entering
     21300062: Worm Sprite Sheet_40
-    21300064: Worm Sprite Sheet_42
-    21300066: Worm Sprite Sheet_46
+    21300064: Worm Sprite Sheet_41 a
+    21300066: Worm Sprite Sheet_46 hole exitting
     21300068: Worm Sprite Sheet_47
     21300070: Worm Sprite Sheet_48
   externalObjects: {}
@@ -142,7 +142,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Worm idle
+      name: Worm Sprite Sheet_0 idle
       rect:
         serializedVersion: 2
         x: 11
@@ -302,7 +302,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm moving
+      name: Worm Sprite Sheet_8 moving
       rect:
         serializedVersion: 2
         x: 11
@@ -462,7 +462,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm damage
+      name: Worm Sprite Sheet_16 damage
       rect:
         serializedVersion: 2
         x: 11
@@ -542,7 +542,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm death
+      name: Worm Sprite Sheet_20 death
       rect:
         serializedVersion: 2
         x: 11
@@ -662,7 +662,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm Sprite Sheet_26
+      name: Worm Sprite Sheet_26 hole front
       rect:
         serializedVersion: 2
         x: 7
@@ -682,7 +682,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm Sprite Sheet_29
+      name: Worm Sprite Sheet_29 hole behind
       rect:
         serializedVersion: 2
         x: 7
@@ -702,7 +702,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm Sprite Sheet_33
+      name: Worm Sprite Sheet_42 a
       rect:
         serializedVersion: 2
         x: 98
@@ -742,7 +742,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm Sprite Sheet_39
+      name: Worm Sprite Sheet_39 hole entering
       rect:
         serializedVersion: 2
         x: 7
@@ -782,7 +782,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm Sprite Sheet_42
+      name: Worm Sprite Sheet_41 a
       rect:
         serializedVersion: 2
         x: 68
@@ -802,7 +802,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm Sprite Sheet_46
+      name: Worm Sprite Sheet_46 hole exitting
       rect:
         serializedVersion: 2
         x: 7
