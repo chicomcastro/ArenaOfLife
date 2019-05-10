@@ -31,11 +31,15 @@ public class Enemy : MonoBehaviour
 
     void OnEnable()
     {
+        players = GameObject.FindGameObjectsWithTag("Player");
+        gameObject.layer = 8;
+        gameObject.tag = "Enemy";
+
         aiRoot.OpenBranch(
             BT.If(IsAlive).OpenBranch(
                 BT.Selector().OpenBranch(
                     BT.If(PlayerInRange).OpenBranch(
-                        BT.Call(Rest),
+                        BT.Call(PrepareForAttack),
                         BT.If(CanAttack).OpenBranch(
                             BT.Call(Attack)
                         )
@@ -54,6 +58,14 @@ public class Enemy : MonoBehaviour
                 )
             )
         );
+    }
+
+    private void PrepareForAttack()
+    {
+        if (enemyAttack != null)
+        {
+            Rest();
+        }
     }
 
     private bool TestVisibleTarget()
@@ -119,6 +131,9 @@ public class Enemy : MonoBehaviour
 
     private void Follow()
     {
+        if (IsBusy())
+            return;
+
         MoveOn(dir);
     }
 
@@ -142,6 +157,14 @@ public class Enemy : MonoBehaviour
         return false;
     }
 
+    private bool IsBusy()
+    {
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("attack"))
+            return true;
+
+        return false;
+    }
+
     private bool SameDirection(Vector3 dir, Vector2 facingDir)
     {
         if (Vector3.Dot(facingDir, dir) < 0)
@@ -161,7 +184,7 @@ public class Enemy : MonoBehaviour
         sprintSpeed = walkSpeed + (walkSpeed / 2);
 
         Vector3 localScale = transform.localScale;
-        localScale.x = (UnityEngine.Random.Range(0f, 1f) > 0.5 ? -1 : 1);
+        localScale.x *= (UnityEngine.Random.Range(0f, 1f) > 0.5 ? -1 : 1);
         transform.localScale = localScale;
 
         facingDir = (transform.localScale.x > 0 ? Vector2.right : Vector2.left);
@@ -192,7 +215,7 @@ public class Enemy : MonoBehaviour
 
     public bool CanAttack()
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("attacking"))
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("attack"))
         {
             return false;
         }
@@ -221,10 +244,35 @@ public class Enemy : MonoBehaviour
         rb.velocity = dir.normalized * curSpeed;
     }
 
-    public void Attack()
+    private void Attack()
     {
         Aim(dir);
-        anim.Play("attacking");
+        anim.Play("attack");
+
+        if (enemyAttack != null)
+        {
+            RangedAttack();
+        }
+        else
+        {
+            MeleeAttack();
+        }
+    }
+
+    private void MeleeAttack()
+    {
+        PlayerController pc = target.gameObject.GetComponent<PlayerController>();
+        pc.TakeDamage(stats.damage);
+
+        Rigidbody2D _rb = target.gameObject.GetComponent<Rigidbody2D>();
+        Vector2 enemyDir = _rb.transform.position - transform.position;
+        if (Mathf.Abs(enemyDir.y) < gameObject.GetComponent<Collider2D>().bounds.extents.y)
+            enemyDir.y = 0;
+        _rb.AddForce(stats.attackKnockback * enemyDir.normalized * _rb.mass * 0.5f, ForceMode2D.Impulse);//, ForceMode2D.Impulse);
+    }
+
+    private void RangedAttack()
+    {
         GameObject gamo = Instantiate(enemyAttack, transform.position, Quaternion.LookRotation(Vector3.forward, Vector3.Cross(dir, Vector3.forward)));
         gamo.GetComponent<ProjectileMovement>().dir = dir;
         gamo.GetComponent<ProjectileMovement>().damage = stats.damage;
@@ -243,6 +291,7 @@ public class Enemy : MonoBehaviour
             anim.Play("death");
             rb.velocity = Vector3.zero;
             rb.isKinematic = true;
+            gameObject.GetComponent<Collider2D>().isTrigger = true;
             return false;
         }
 

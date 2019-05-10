@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -55,6 +56,11 @@ public class PlayerController : MonoBehaviour
         if (isAttacking)
             return;
 
+        HandleDamage();
+
+        if (isBeenAttacked)
+            return;
+
         HandleAnimation();
 
         HandleFacingDirection();
@@ -62,6 +68,13 @@ public class PlayerController : MonoBehaviour
         Move();
     }
 
+    private void HandleDamage()
+    {
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("damage"))
+            isBeenAttacked = false;
+    }
+
+    private bool isBeenAttacked = false;
     public void Move()
     {
         curSpeed = walkSpeed;
@@ -162,13 +175,17 @@ public class PlayerController : MonoBehaviour
         if (status.HP <= 0f)
         {
             rb.velocity = Vector3.zero;
+            rb.isKinematic = true;
             anim.Play("death");
             haveDied = true;
 
-            if (GameController.instance.IsAllPlayersDead())
+            if (GameController.instance != null)
             {
-                if (Input.GetButton(controls.attackButtons[0]))
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                if (GameController.instance.IsAllPlayersDead())
+                {
+                    if (Input.GetButton(controls.attackButtons[0]))
+                        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                }
             }
         }
     }
@@ -178,7 +195,15 @@ public class PlayerController : MonoBehaviour
         if (status.HP < 0)
             return;
 
+        if (isAttacking && UnityEngine.Random.Range(0f, 1f) < 0.25 * status.agility) // Dodging
+            return;
+
+        anim.Play("damage");
+        isBeenAttacked = true;
+
         status.HP -= _damage;
-        LifeManager.instance.LostHalfHeart();
+
+        if (LifeManager.instance != null)
+            LifeManager.instance.LostHalfHeart();
     }
 }
