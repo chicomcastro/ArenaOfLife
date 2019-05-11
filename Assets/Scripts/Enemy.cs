@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 {
     public GameObject[] players;
     public GameObject enemyAttack;
+    public GameObject enemyUI;
 
     private float lastAttackTime;
     private float walkSpeed;
@@ -188,6 +189,14 @@ public class Enemy : MonoBehaviour
         transform.localScale = localScale;
 
         facingDir = (transform.localScale.x > 0 ? Vector2.right : Vector2.left);
+
+        if (enemyUI == null)
+            return;
+
+        GameObject enemyUICanvas = Instantiate(enemyUI, transform.position, Quaternion.identity, transform.parent);
+        enemyUICanvas.GetComponent<EnemyCanvas>().enemy = this;
+        enemyUICanvas.GetComponent<EnemyCanvas>().offSet = new Vector3(0, -GetComponent<Collider2D>().bounds.size.y, 0);
+        enemyUICanvas.GetComponent<EnemyCanvas>().healthBar.maxValue = stats.HP;
     }
 
     void Update()

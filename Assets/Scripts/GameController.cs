@@ -1,10 +1,15 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public PlayerController[] players;
+    private PlayerController[] players;
+    public MultiplayerCameraSystem.CameraController cameraController;
 
     public static GameController instance;
+
+    private int playersReady = 0;
 
     void Awake()
     {
@@ -12,6 +17,8 @@ public class GameController : MonoBehaviour
             instance = this;
         else
             Destroy(this.gameObject);
+
+        players = GameObject.FindObjectsOfType<PlayerController>();
     }
 
     public bool IsAllPlayersDead()
@@ -23,5 +30,19 @@ public class GameController : MonoBehaviour
         }
 
         return true;
+    }
+
+    public void SetReady()
+    {
+        playersReady++;
+        
+        if (playersReady == players.Length)
+            StartGame();
+    }
+
+    private void StartGame()
+    {
+        cameraController.enabled = true;
+        Time.timeScale = 1;
     }
 }

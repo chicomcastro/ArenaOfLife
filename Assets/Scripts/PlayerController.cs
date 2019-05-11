@@ -21,11 +21,13 @@ public class PlayerController : MonoBehaviour
     private bool isAttacking;
 
     private Dictionary<string, string> registeredAttacks = new Dictionary<string, string>();
+    private LifeManager lifeManager;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        lifeManager = transform.parent.gameObject.GetComponentInChildren<LifeManager>();
 
         controls = new Controls(controllerType);
 
@@ -39,7 +41,7 @@ public class PlayerController : MonoBehaviour
         haveDied = false;
         isAttacking = false;
 
-        walkSpeed = (float)(status.speed + (status.agility / 5));
+        walkSpeed = (float)(status.speed + (status.agility * 1.5f));
         sprintSpeed = walkSpeed + (walkSpeed / 2);
 
     }
@@ -75,6 +77,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private bool isBeenAttacked = false;
+
     public void Move()
     {
         curSpeed = walkSpeed;
@@ -179,12 +182,16 @@ public class PlayerController : MonoBehaviour
             anim.Play("death");
             haveDied = true;
 
+            transform.parent.Find("Canvas").Find("DeathUIAnimation").gameObject.SetActive(true);
+
             if (GameController.instance != null)
             {
                 if (GameController.instance.IsAllPlayersDead())
                 {
                     if (Input.GetButton(controls.attackButtons[0]))
-                        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+                    else if (Input.GetButton("Cancel"))
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
                 }
             }
         }
@@ -203,7 +210,12 @@ public class PlayerController : MonoBehaviour
 
         status.HP -= _damage;
 
-        if (LifeManager.instance != null)
-            LifeManager.instance.LostHalfHeart();
+        if (lifeManager == null)
+        {
+            Debug.LogWarning("LifeManager is missing on " + gameObject.name);
+            return;
+        }
+
+        lifeManager.AttHeartQuant(status.HP);
     }
 }

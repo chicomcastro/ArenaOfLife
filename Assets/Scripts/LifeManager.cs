@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,7 +16,7 @@ public class LifeManager : MonoBehaviour
 
     private int lifeQuant;
 
-    private LinkedList<GameObject> lives;
+    private List<GameObject> lives;
 
     public static LifeManager instance;
 
@@ -32,26 +33,38 @@ public class LifeManager : MonoBehaviour
     [ContextMenu("Set up stats")]
     public void SetUpStats(int lifeQuant)
     {
-        lives = new LinkedList<GameObject>();
+        lives = new List<GameObject>();
 
         for (int i = 0; i < lifeQuant; i++)
         {
-            lives.AddLast(Instantiate(heartPrefab, healthBar.transform));
+            lives.Add(Instantiate(heartPrefab, healthBar.transform));
         }
     }
 
-    [ContextMenu("Lost half heart")]
-    public void LostHalfHeart()
+    public void AttHeartQuant(float _hp)
     {
-        GameObject lastHeart = lives.Last.Value;
-        if (lastHeart.GetComponent<Image>().sprite == fullHeart)
+        int currentFullHearts = (int)_hp / 10;
+        currentFullHearts = currentFullHearts >= 0 ? currentFullHearts : 0;
+        int currentHalfHearts = (int)(_hp - currentFullHearts * 10) / 5;
+        currentHalfHearts = currentHalfHearts >= 0 ? currentHalfHearts : 0;
+
+        ManageHalfHearts(currentFullHearts, currentHalfHearts);
+    }
+
+    private void ManageHalfHearts(int _fullHearts, int _halfHearts)
+    {
+        int i;
+        for (i = 0; i < _fullHearts; i++)
         {
-            lastHeart.GetComponent<Image>().sprite = halfHeart;
+            lives[i].GetComponent<Image>().sprite = fullHeart;
         }
-        else
+        for (i = 0; i < _halfHearts; i++)
         {
-            lastHeart.GetComponent<Image>().sprite = emptyHeart;
-            lives.RemoveLast();
+            lives[i + _fullHearts].GetComponent<Image>().sprite = halfHeart;
+        }
+        for (i = 0; i < lives.Count - (_fullHearts + _halfHearts); i++)
+        {
+            lives[i + _fullHearts + _halfHearts].GetComponent<Image>().sprite = emptyHeart;
         }
     }
 }

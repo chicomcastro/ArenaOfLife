@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using System;
 
 public class HeartCurrency : MonoBehaviour
 {
@@ -16,6 +18,7 @@ public class HeartCurrency : MonoBehaviour
 
     public TextMeshProUGUI totalText;
     public GameObject currencyPanel;
+    public Button readyButton;
 
     public GameObject heartPrefab;
     public GameObject HPCorePanel;
@@ -23,12 +26,19 @@ public class HeartCurrency : MonoBehaviour
     public GameObject AgilityCorePanel;
 
     private string totalTextString = "Cores Lefting: ";
+    private LifeManager lifeManager;
 
     void Awake()
     {
+        lifeManager = GetComponent<LifeManager>();
         Time.timeScale = 0;
 
         AttTotalString();
+    }
+
+    private void Update()
+    {
+        readyButton.interactable = (totalHearts == 0);
     }
 
     public void SetUpStats()
@@ -36,13 +46,13 @@ public class HeartCurrency : MonoBehaviour
         if (totalHearts != 0)
             return;
 
-        LifeManager.instance.SetUpStats(lifeQuant);
+        lifeManager.SetUpStats(lifeQuant);
         player.status.HP = 10f * lifeQuant;
-        player.status.damage = 5f * (powerQuant+1);
+        player.status.damage = 5f * (powerQuant + 1);
         player.status.agility = speedQuant;
 
         currencyPanel.SetActive(false);
-        Time.timeScale = 1;
+        GameController.instance.SetReady();
     }
 
     public void IncrementHP()

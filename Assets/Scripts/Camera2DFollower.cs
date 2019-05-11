@@ -13,6 +13,9 @@ namespace MultiplayerCameraSystem
         public float lookAheadReturnSpeed = 0.5f;
         public float lookAheadMoveThreshold = 0.1f;
 
+        public bool freezeX = false;
+        public bool freezeY = false;
+
         private float m_OffsetZ;
         private Vector3 m_LastTargetPosition;
         private Vector3 m_CurrentVelocity;
@@ -46,6 +49,9 @@ namespace MultiplayerCameraSystem
 
             Vector3 aheadTargetPos = target.position + m_LookAheadPos + Vector3.forward * m_OffsetZ;
             Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
+
+            if (freezeX) newPos.x = transform.position.x;
+            if (freezeY) newPos.y = transform.position.y;
 
             transform.position = newPos;
 

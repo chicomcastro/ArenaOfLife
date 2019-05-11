@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,20 +7,41 @@ namespace MultiplayerCameraSystem
 {
     public class CameraController : MonoBehaviour
     {
-        public GameObject[] players;
-        public Camera mainCamera;
-        public Camera[] playerCameras;
+        private GameObject[] players;
+        private Camera mainCamera;
+        private Camera[] playerCameras;
 
         public float refDistance;
         private float initialSize;
         public float maxAllowedDistance;
 
+        void Awake()
+        {
+            mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+
+            players = GameObject.FindGameObjectsWithTag("Player");
+            playerCameras = new Camera[players.Length];
+            for (int i = 0; i < players.Length; i++)
+            {
+                playerCameras[i] = players[i].transform.parent.gameObject.GetComponentInChildren<Camera>();
+            }
+        }
+
         void Start()
         {
             // Validate references
+            if (mainCamera == null)
+            {
+                Debug.LogWarning("There's no main camera attached to CameraController script");
+                this.enabled = false;
+                return;
+            }
+
             if (players.Length <= 1)
             {
-                Debug.LogWarning("There's not yet players attached to CameraController script");
+                if (players.Length == 1)
+                    mainCamera.gameObject.GetComponent<Camera2DFollower>().target = players[0].transform;
+
                 this.enabled = false;
                 return;
             }
@@ -31,30 +53,26 @@ namespace MultiplayerCameraSystem
                 return;
             }
 
-            if (mainCamera == null)
-            {
-                Debug.LogWarning("There's no main camera attached to CameraController script");
-                this.enabled = false;
-                return;
-            }
-
             // Set initial parameters
             //refDistance = ActualDistance();
             initialSize = mainCamera.orthographicSize;
 
             // Validate cameras components
-            if (mainCamera.GetComponent<Camera2DFollower>() == null)
+            if (mainCamera.GetComponent<Camera2DFollower>().target == null)
             {
                 mainCamera.gameObject.AddComponent<Camera2DFollower>().target = this.transform;
             }
             for (int i = 0; i < playerCameras.Length; i++)
             {
                 Camera camera = playerCameras[i];
-                if (camera.GetComponent<Camera2DFollower>() == null)
+                if (camera.GetComponent<Camera2DFollower>().target == null)
                 {
                     camera.gameObject.AddComponent<Camera2DFollower>().target = players[i].transform;
                 }
             }
+
+            SetSingleCameraModeActive(false);
+            this.enabled = false;
         }
 
         void Update()
@@ -62,23 +80,13 @@ namespace MultiplayerCameraSystem
             if (ActualDistance() < maxAllowedDistance)
             {
                 // Active main camera
-                mainCamera.gameObject.SetActive(true);
                 HandleSingleCamera(mainCamera);
-
-                foreach (Camera camera in playerCameras)
-                {
-                    camera.gameObject.SetActive(false);
-                }
+                SetSingleCameraModeActive(true);
             }
             else
             {
                 // Active players cameras
-                mainCamera.gameObject.SetActive(false);
-
-                foreach (Camera camera in playerCameras)
-                {
-                    camera.gameObject.SetActive(true);
-                }
+                SetSingleCameraModeActive(false);
 
                 // We should improve this to move cameras to players position before activating them and to select the best scroll side for each one
             }
@@ -100,12 +108,31 @@ namespace MultiplayerCameraSystem
                 transform.position += player.transform.position;
             }
 
-            transform.position /= players.Length;  // Mean position
+            ValidateTransform();
 
             // If we have multiple players, try to fit them all when using a single camera
             float actualDistance = ActualDistance();
             if (actualDistance > refDistance)
                 _cam.orthographicSize = initialSize / refDistance * actualDistance;
+        }
+
+        private void ValidateTransform()
+        {
+            // Get collider from walls
+            // See if camera target is too near from walls
+            // Set it to far enough
+            transform.position /= players.Length;  // Mean position
+        }
+
+        public void SetSingleCameraModeActive(bool _status)
+        {
+
+            mainCamera.enabled = _status;
+
+            foreach (Camera camera in playerCameras)
+            {
+                camera.enabled = !_status;
+            }
         }
     }
 }
