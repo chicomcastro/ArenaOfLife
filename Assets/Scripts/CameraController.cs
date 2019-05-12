@@ -40,8 +40,12 @@ namespace MultiplayerCameraSystem
             if (players.Length <= 1)
             {
                 if (players.Length == 1)
-                    mainCamera.gameObject.GetComponent<Camera2DFollower>().target = players[0].transform;
-
+                {
+                    playerCameras[0].enabled = true;
+                    playerCameras[0].gameObject.GetComponent<Camera2DFollower>().target = players[0].transform;
+                    mainCamera.enabled = false;
+                }
+                
                 this.enabled = false;
                 return;
             }

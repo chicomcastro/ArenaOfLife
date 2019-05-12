@@ -48,7 +48,7 @@ public class HeartCurrency : MonoBehaviour
 
         lifeManager.SetUpStats(lifeQuant);
         player.status.HP = 10f * lifeQuant;
-        player.status.damage = 5f * (powerQuant + 1);
+        player.status.damage = 2.5f * (powerQuant + 1);
         player.status.agility = speedQuant;
 
         currencyPanel.SetActive(false);

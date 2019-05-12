@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
@@ -23,6 +24,8 @@ public class PlayerController : MonoBehaviour
     private Dictionary<string, string> registeredAttacks = new Dictionary<string, string>();
     private LifeManager lifeManager;
 
+    public GameObject feedbackTextPrefab;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -40,10 +43,6 @@ public class PlayerController : MonoBehaviour
 
         haveDied = false;
         isAttacking = false;
-
-        walkSpeed = (float)(status.speed + (status.agility * 1.5f));
-        sprintSpeed = walkSpeed + (walkSpeed / 2);
-
     }
 
     void FixedUpdate()
@@ -80,6 +79,9 @@ public class PlayerController : MonoBehaviour
 
     public void Move()
     {
+        walkSpeed = (float)(status.speed + (status.agility * 0.5f));
+        sprintSpeed = walkSpeed + (walkSpeed / 2);
+
         curSpeed = walkSpeed;
         maxSpeed = curSpeed;
 
@@ -151,6 +153,12 @@ public class PlayerController : MonoBehaviour
         hits.Add(Physics2D.Raycast(transform.position + Vector3.up * boundary.y * 2, facingDir, Mathf.Infinity, layerMask));
         hits.Add(Physics2D.Raycast(transform.position - Vector3.up * boundary.y * 2, facingDir, Mathf.Infinity, layerMask));
 
+        hits.Add(Physics2D.Raycast(transform.position + (Vector3)facingDir * boundary.x, Vector3.up, Mathf.Infinity, layerMask));
+        hits.Add(Physics2D.Raycast(transform.position + (Vector3)facingDir * boundary.x, Vector3.down, Mathf.Infinity, layerMask));
+
+        hits.Add(Physics2D.Raycast(transform.position + (Vector3)facingDir * boundary.x * 2, Vector3.up, Mathf.Infinity, layerMask));
+        hits.Add(Physics2D.Raycast(transform.position + (Vector3)facingDir * boundary.x * 2, Vector3.down, Mathf.Infinity, layerMask));
+
         // If it hits something...
         foreach (RaycastHit2D hit in hits)
         {
@@ -163,11 +171,14 @@ public class PlayerController : MonoBehaviour
                     if (enemy != null)
                         enemy.TakeDamage(status.damage);
 
-                    Rigidbody2D _rb = hit.collider.gameObject.GetComponent<Rigidbody2D>();
-                    Vector2 enemyDir = _rb.transform.position - transform.position;
-                    if (Mathf.Abs(enemyDir.y) < boundary.y)
-                        enemyDir.y = 0;
-                    _rb.AddForce(status.attackKnockback * enemyDir.normalized * _rb.mass * 50f, ForceMode2D.Impulse);//, ForceMode2D.Impulse);
+                    if (hit.collider.gameObject.GetComponent<ProjectileMovement>() == null)
+                    {
+                        Rigidbody2D _rb = hit.collider.gameObject.GetComponent<Rigidbody2D>();
+                        Vector2 enemyDir = _rb.transform.position - transform.position;
+                        if (Mathf.Abs(enemyDir.y) < boundary.y)
+                            enemyDir.y = 0;
+                        _rb.AddForce(status.attackKnockback * enemyDir.normalized * _rb.mass * 50f, ForceMode2D.Impulse);//, ForceMode2D.Impulse);
+                    }
                 }
             }
         }
@@ -175,12 +186,14 @@ public class PlayerController : MonoBehaviour
         GameObject.FindGameObjectWithTag("AudioManager").transform.Find("SwordSwing").GetComponent<AudioSource>().PlayDelayed(0.15f);
     }
 
+
     public void HandleDeath()
     {
         if (status.HP <= 0f)
         {
             rb.velocity = Vector3.zero;
             rb.isKinematic = true;
+            GetComponent<Collider2D>().isTrigger = true;
             anim.Play("death");
             haveDied = true;
 
@@ -190,6 +203,9 @@ public class PlayerController : MonoBehaviour
             {
                 if (GameController.instance.IsAllPlayersDead())
                 {
+                    if (transform.parent.Find("Canvas").Find("DeathUIAnimation").gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime <= 1)
+                        return;
+
                     if (Input.GetButton(controls.attackButtons[0]))
                         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
                     else if (Input.GetButton("Cancel"))
@@ -204,13 +220,17 @@ public class PlayerController : MonoBehaviour
         if (status.HP < 0)
             return;
 
-        if (isAttacking && UnityEngine.Random.Range(0f, 1f) < 0.25 * status.agility) // Dodging
+        if (isAttacking && UnityEngine.Random.Range(0f, 1f) < 0.20 * status.agility)
+        { // Dodging
+            Dodge();
             return;
+        }
 
         anim.Play("damage");
         isBeenAttacked = true;
 
         status.HP -= _damage;
+        FeedbackUI("-" + _damage.ToString());
 
         if (lifeManager == null)
         {
@@ -219,5 +239,18 @@ public class PlayerController : MonoBehaviour
         }
 
         lifeManager.AttHeartQuant(status.HP);
+    }
+
+    private void FeedbackUI(string _message)
+    {
+        GameObject textObj = Instantiate(feedbackTextPrefab, transform.position, Quaternion.identity);
+        textObj.GetComponentInChildren<TextMeshProUGUI>().text = _message;
+        Destroy(textObj.gameObject, 1.0f);
+    }
+
+    [ContextMenu("DodgeTest")]
+    public void Dodge()
+    {
+        FeedbackUI("DODGE!");
     }
 }

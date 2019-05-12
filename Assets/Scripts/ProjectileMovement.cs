@@ -7,12 +7,6 @@ public class ProjectileMovement : MonoBehaviour
 {
     public float speed = 2.5f;
     public float damage = 1f;
-    public Vector3 dir = Vector3.right;
-
-    void Update()
-    {
-        transform.Translate(speed * Time.deltaTime * dir, Space.World);
-    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,6 +23,7 @@ public class ProjectileMovement : MonoBehaviour
 
     private void DestroyRoutine()
     {
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         GetComponent<Animator>().Play("hitting");
 
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)

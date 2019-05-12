@@ -35,14 +35,15 @@ public class GameController : MonoBehaviour
     public void SetReady()
     {
         playersReady++;
-        
+
         if (playersReady == players.Length)
             StartGame();
     }
 
     private void StartGame()
     {
-        cameraController.enabled = true;
+        if (players.Length != 1)
+            cameraController.enabled = true;
         Time.timeScale = 1;
     }
 }

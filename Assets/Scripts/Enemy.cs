@@ -181,8 +181,10 @@ public class Enemy : MonoBehaviour
         lastAttackTime = Time.time;
         initialPos = transform.position;
 
-        walkSpeed = (float)(stats.speed + (stats.agility / 5));
+        walkSpeed = (float)(stats.speed + (stats.agility));
         sprintSpeed = walkSpeed + (walkSpeed / 2);
+
+        stats.HP *= players.Length;
 
         Vector3 localScale = transform.localScale;
         localScale.x *= (UnityEngine.Random.Range(0f, 1f) > 0.5 ? -1 : 1);
@@ -290,8 +292,8 @@ public class Enemy : MonoBehaviour
     private void RangedAttack()
     {
         GameObject gamo = Instantiate(enemyAttack, transform.position, Quaternion.LookRotation(Vector3.forward, Vector3.Cross(dir, Vector3.forward)));
-        gamo.GetComponent<ProjectileMovement>().dir = dir;
         gamo.GetComponent<ProjectileMovement>().damage = stats.damage;
+        gamo.GetComponent<Rigidbody2D>().velocity = dir * gamo.GetComponent<ProjectileMovement>().speed;
 
         PlaySound("EnemyAttackRanged");
     }
@@ -307,10 +309,14 @@ public class Enemy : MonoBehaviour
         if (stats.HP <= 0f)
         {
             anim.Play("death");
-            PlaySound("EnemyDeath");
-            rb.velocity = Vector3.zero;
-            rb.isKinematic = true;
             gameObject.GetComponent<Collider2D>().isTrigger = true;
+            rb.velocity = Vector3.zero;
+
+            if (!rb.isKinematic)
+                PlaySound("EnemyDeath");
+
+            rb.isKinematic = true;
+
             return false;
         }
 
