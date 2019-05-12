@@ -3942,7 +3942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 3169693531286874880}
-  totalHearts: 5
+  totalHearts: 10
   lifeQuant: 0
   powerQuant: 0
   speedQuant: 0

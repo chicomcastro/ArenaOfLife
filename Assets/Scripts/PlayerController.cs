@@ -171,6 +171,8 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
+        GameObject.FindGameObjectWithTag("AudioManager").transform.Find("SwordSwing").GetComponent<AudioSource>().PlayDelayed(0.15f);
     }
 
     public void HandleDeath()

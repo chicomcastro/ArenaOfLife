@@ -273,6 +273,8 @@ public class Enemy : MonoBehaviour
         PlayerController pc = target.gameObject.GetComponent<PlayerController>();
         pc.TakeDamage(stats.damage);
 
+        PlaySound("EnemyAttackMelee");
+
         Rigidbody2D _rb = target.gameObject.GetComponent<Rigidbody2D>();
         Vector2 enemyDir = _rb.transform.position - transform.position;
         if (Mathf.Abs(enemyDir.y) < gameObject.GetComponent<Collider2D>().bounds.extents.y)
@@ -280,11 +282,18 @@ public class Enemy : MonoBehaviour
         _rb.AddForce(stats.attackKnockback * enemyDir.normalized * _rb.mass * 0.5f, ForceMode2D.Impulse);//, ForceMode2D.Impulse);
     }
 
+    private void PlaySound(string _sound)
+    {
+        GameObject.FindGameObjectWithTag("AudioManager").transform.Find(_sound).GetComponent<AudioSource>().Play();
+    }
+
     private void RangedAttack()
     {
         GameObject gamo = Instantiate(enemyAttack, transform.position, Quaternion.LookRotation(Vector3.forward, Vector3.Cross(dir, Vector3.forward)));
         gamo.GetComponent<ProjectileMovement>().dir = dir;
         gamo.GetComponent<ProjectileMovement>().damage = stats.damage;
+
+        PlaySound("EnemyAttackRanged");
     }
 
     public void Rest()
@@ -298,6 +307,7 @@ public class Enemy : MonoBehaviour
         if (stats.HP <= 0f)
         {
             anim.Play("death");
+            PlaySound("EnemyDeath");
             rb.velocity = Vector3.zero;
             rb.isKinematic = true;
             gameObject.GetComponent<Collider2D>().isTrigger = true;
@@ -310,7 +320,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float _damage)
     {
         stats.HP -= _damage;
-
+        PlaySound("EnemyHit");
         lastAttackTime = Time.time - stats.attackCooldown / 2;
     }
 }

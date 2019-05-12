@@ -20,5 +20,5 @@ public class Controls
 
 public enum ControllerType
 {
-    keyboard, joystick1, joystick2
+    keyboard, keyboard_alt, joystick1, joystick2
 };

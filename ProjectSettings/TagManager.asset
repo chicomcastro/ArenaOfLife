@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Creatures
+  - AudioManager
   layers:
   - Default
   - TransparentFX
