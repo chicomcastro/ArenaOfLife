@@ -21,10 +21,11 @@ public class PlayerController : MonoBehaviour
     private bool haveDied;
     private bool isAttacking;
 
+    private bool isBeenAttacked = false;
+    private float lastAttackTime;
+
     private Dictionary<string, string> registeredAttacks = new Dictionary<string, string>();
     private LifeManager lifeManager;
-
-    public GameObject feedbackTextPrefab;
 
     void Start()
     {
@@ -43,6 +44,8 @@ public class PlayerController : MonoBehaviour
 
         haveDied = false;
         isAttacking = false;
+
+        lastAttackTime = Time.time;
     }
 
     void FixedUpdate()
@@ -74,8 +77,6 @@ public class PlayerController : MonoBehaviour
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("damage"))
             isBeenAttacked = false;
     }
-
-    private bool isBeenAttacked = false;
 
     public void Move()
     {
@@ -113,6 +114,9 @@ public class PlayerController : MonoBehaviour
 
     public void HandleAttack()
     {
+        if (Time.time - lastAttackTime < status.attackCooldown)
+            return;
+
         foreach (string s in registeredAttacks.Keys)
         {
             if (Input.GetButton(s) && !isAttacking)
@@ -158,7 +162,10 @@ public class PlayerController : MonoBehaviour
 
         hits.Add(Physics2D.Raycast(transform.position + (Vector3)facingDir * boundary.x * 2, Vector3.up, Mathf.Infinity, layerMask));
         hits.Add(Physics2D.Raycast(transform.position + (Vector3)facingDir * boundary.x * 2, Vector3.down, Mathf.Infinity, layerMask));
-
+        
+        hits.Add(Physics2D.Raycast(transform.position, Vector3.up, Mathf.Infinity, layerMask));
+        hits.Add(Physics2D.Raycast(transform.position, Vector3.down, Mathf.Infinity, layerMask));
+        
         // If it hits something...
         foreach (RaycastHit2D hit in hits)
         {
@@ -179,11 +186,15 @@ public class PlayerController : MonoBehaviour
                             enemyDir.y = 0;
                         _rb.AddForce(status.attackKnockback * enemyDir.normalized * _rb.mass * 50f, ForceMode2D.Impulse);//, ForceMode2D.Impulse);
                     }
+
+                    break;
                 }
             }
         }
 
         GameObject.FindGameObjectWithTag("AudioManager").transform.Find("SwordSwing").GetComponent<AudioSource>().PlayDelayed(0.15f);
+
+        lastAttackTime = Time.time;
     }
 
 
@@ -215,12 +226,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float _damage)
+    public void TakeDamage(float _damage, bool canDodge = true)
     {
         if (status.HP < 0)
             return;
 
-        if (isAttacking && UnityEngine.Random.Range(0f, 1f) < 0.20 * status.agility)
+        if (isAttacking && UnityEngine.Random.Range(0f, 1f) < 0.20 * status.agility && canDodge)
         { // Dodging
             Dodge();
             return;
@@ -230,7 +241,7 @@ public class PlayerController : MonoBehaviour
         isBeenAttacked = true;
 
         status.HP -= _damage;
-        FeedbackUI("-" + _damage.ToString());
+        GameController.instance.FeedbackUI("-" + _damage.ToString(), this.transform);
 
         if (lifeManager == null)
         {
@@ -241,16 +252,9 @@ public class PlayerController : MonoBehaviour
         lifeManager.AttHeartQuant(status.HP);
     }
 
-    private void FeedbackUI(string _message)
-    {
-        GameObject textObj = Instantiate(feedbackTextPrefab, transform.position, Quaternion.identity);
-        textObj.GetComponentInChildren<TextMeshProUGUI>().text = _message;
-        Destroy(textObj.gameObject, 1.0f);
-    }
-
     [ContextMenu("DodgeTest")]
     public void Dodge()
     {
-        FeedbackUI("DODGE!");
+        GameController.instance.FeedbackUI("DODGE!", this.transform);
     }
 }

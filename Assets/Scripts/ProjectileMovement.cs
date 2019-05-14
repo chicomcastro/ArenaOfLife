@@ -12,10 +12,13 @@ public class ProjectileMovement : MonoBehaviour
     {
         if (other.gameObject.GetComponent<Enemy>() != null)
             return;
-            
+
         if (other.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+            if (Vector3.Dot(other.gameObject.transform.localScale, transform.right) < 0)
+                other.gameObject.GetComponent<PlayerController>().TakeDamage(damage, false);
+            else
+                other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
         }
 
         InvokeRepeating("DestroyRoutine", 0f, 0.1f);

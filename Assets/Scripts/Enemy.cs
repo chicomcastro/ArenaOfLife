@@ -38,23 +38,25 @@ public class Enemy : MonoBehaviour
 
         aiRoot.OpenBranch(
             BT.If(IsAlive).OpenBranch(
-                BT.Selector().OpenBranch(
-                    BT.If(PlayerInRange).OpenBranch(
-                        BT.Call(PrepareForAttack),
-                        BT.If(CanAttack).OpenBranch(
-                            BT.Call(Attack)
+                BT.If(IsNotDamaging).OpenBranch(
+                    BT.Selector().OpenBranch(
+                        BT.If(PlayerInRange).OpenBranch(
+                            BT.Call(PrepareForAttack),
+                            BT.If(CanAttack).OpenBranch(
+                                BT.Call(Attack)
+                            )
+                        ),
+                        BT.If(PlayerInTerritory).OpenBranch(
+                            BT.Call(Follow)
+                        ),
+                        BT.If(AwayFromHome).OpenBranch(
+                            BT.Call(ReturnHome)
+                        ),
+                        BT.Sequence().OpenBranch(
+                            BT.Call(Rest),
+                            BT.Wait(2.0f),
+                            BT.Call(Turn)
                         )
-                    ),
-                    BT.If(PlayerInTerritory).OpenBranch(
-                        BT.Call(Follow)
-                    ),
-                    BT.If(AwayFromHome).OpenBranch(
-                        BT.Call(ReturnHome)
-                    ),
-                    BT.Sequence().OpenBranch(
-                        BT.Call(Rest),
-                        BT.Wait(2.0f),
-                        BT.Call(Turn)
                     )
                 )
             )
@@ -154,6 +156,7 @@ public class Enemy : MonoBehaviour
         {
             return true;
         }
+        lastAttackTime = Time.time - stats.attackCooldown / 2;
 
         return false;
     }
@@ -211,6 +214,24 @@ public class Enemy : MonoBehaviour
         aiRoot.Tick();
     }
 
+    private bool IsNotDamaging()
+    {
+        if (!anim.HasState(0, Animator.StringToHash("damage")))
+            return true;
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("damage"))
+        {
+            if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+            {
+                PlayAnimation("idle");
+                return true;
+            }
+            return false;
+        }
+
+        return true;
+    }
+
     private void GetMinimalPlayerDist()
     {
         dir = Mathf.Infinity * Vector3.one;
@@ -251,14 +272,14 @@ public class Enemy : MonoBehaviour
     private void MoveOn(Vector3 dir)
     {
         Aim(dir);
-        anim.Play("moving");
+        PlayAnimation("moving");
         rb.velocity = dir.normalized * curSpeed;
     }
 
     private void Attack()
     {
         Aim(dir);
-        anim.Play("attack");
+        PlayAnimation("attack");
 
         if (enemyAttack != null)
         {
@@ -300,33 +321,56 @@ public class Enemy : MonoBehaviour
 
     public void Rest()
     {
-        anim.Play("idle");
+        PlayAnimation("idle");
         rb.velocity = Vector3.zero;
     }
 
     public bool IsAlive()
     {
         if (stats.HP <= 0f)
-        {
-            anim.Play("death");
-            gameObject.GetComponent<Collider2D>().isTrigger = true;
-            rb.velocity = Vector3.zero;
-
-            if (!rb.isKinematic)
-                PlaySound("EnemyDeath");
-
-            rb.isKinematic = true;
-
             return false;
-        }
 
         return true;
     }
 
     public void TakeDamage(float _damage)
     {
+        if (rb.isKinematic)
+            return;
+
         stats.HP -= _damage;
         PlaySound("EnemyHit");
-        lastAttackTime = Time.time - stats.attackCooldown / 2;
+        PlayAnimation("damage");
+        StartCoroutine(FlashDamage());
+        GameController.instance.FeedbackUI("-" + _damage.ToString(), this.transform);
+        //lastAttackTime = Time.time - stats.attackCooldown / 2;
+
+        if (stats.HP <= 0)
+        {
+            Die();
+            return;
+        }
+    }
+
+    private void Die()
+    {
+        PlayAnimation("death");
+        PlaySound("EnemyDeath");
+        gameObject.GetComponent<Collider2D>().isTrigger = true;
+        rb.velocity = Vector3.zero;
+        rb.isKinematic = true;
+    }
+
+    private IEnumerator FlashDamage()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<SpriteRenderer>().color = Color.white;
+    }
+
+    private void PlayAnimation(string _animation)
+    {
+        if (anim.HasState(0, Animator.StringToHash(_animation)))
+            anim.Play(_animation);
     }
 }

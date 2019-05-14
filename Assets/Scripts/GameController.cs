@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -10,6 +11,8 @@ public class GameController : MonoBehaviour
     public static GameController instance;
 
     private int playersReady = 0;
+
+    public GameObject feedbackTextPrefab;
 
     void Awake()
     {
@@ -45,5 +48,11 @@ public class GameController : MonoBehaviour
         if (players.Length != 1)
             cameraController.enabled = true;
         Time.timeScale = 1;
+    }
+    public void FeedbackUI(string _message, Transform _transform)
+    {
+        GameObject textObj = Instantiate(feedbackTextPrefab, _transform.position, Quaternion.identity);
+        textObj.GetComponentInChildren<TextMeshProUGUI>().text = _message;
+        Destroy(textObj.gameObject, 1.0f);
     }
 }
